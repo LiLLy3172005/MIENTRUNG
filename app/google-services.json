@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "488867858022",
+    "project_id": "travelappmientrung-80c57",
+    "storage_bucket": "travelappmientrung-80c57.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488867858022:android:7f68c4023aca8db9ef0fa7",
+        "android_client_info": {
+          "package_name": "com.example.travel_mientrung"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488867858022-e3h92c15mviu194gpm37v6mhq9hip42a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXC3dh_Py71BP8rpOmLGYlZl5Lx8AiWUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488867858022-e3h92c15mviu194gpm37v6mhq9hip42a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

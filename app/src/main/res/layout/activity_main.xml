@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Ảnh nền full screen -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mainn" />
+
+
+    <!-- Icon phía trên TextView -->
+    <!-- Lớp phủ nội dung phía trên ảnh nền -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+<!--        <ImageView-->
+<!--            android:layout_width="68dp"-->
+<!--            android:layout_height="64dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:src="@drawable/ic_launcher_dua_foreground"-->
+
+<!--            android:textAlignment="center" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="494dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/lobster_regular"
+            android:text="Welcome to the heart of Central Vietnam"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp" />
+
+        <!-- Button "Tiếp tục" thay cho ImageView -->
+        <ImageView
+            android:id="@+id/ivNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="Tiếp tục"
+            android:focusable="true"
+            android:src="@drawable/ic_launcher_dua_foreground" />
+
+    </LinearLayout>
+</FrameLayout>
