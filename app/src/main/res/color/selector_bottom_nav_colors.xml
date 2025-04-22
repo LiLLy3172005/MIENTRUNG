@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Được chọn: xanh biển pastel -->
+    <item android:color="#16265F" android:state_checked="true"/>
+    <!-- Không chọn: xám sữa nhẹ nhàng -->
+    <item android:color="#BDBDBD" android:state_checked="false"/>
+</selector>
+

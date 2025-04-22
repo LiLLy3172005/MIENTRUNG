@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/agbalumo</item>
+        <item>@font/chango</item>
+        <item>@font/galada</item>
+        <item>@font/great_vibes</item>
+        <item>@font/philosopher_bold</item>
+        <item>@font/philosopher_italic</item>
+        <item>@font/playball</item>
+        <item>@font/sansita_swashed_light</item>
+    </array>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background ảnh -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mainn" />
+
+    <!-- Card chứa form đăng ký -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/bebasneue_regular"
+                    android:textColor="#000d33"
+                    android:layout_marginBottom="30dp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:background="@android:drawable/edit_text"
+                    android:fontFamily="@font/bebasneue_regular"
+                    android:layout_marginBottom="12dp"
+                    android:drawableStart="@android:drawable/ic_dialog_email" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:fontFamily="@font/bebasneue_regular"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_marginBottom="24dp"
+                    android:drawableStart="@android:drawable/ic_lock_idle_lock" />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:backgroundTint="@color/dark_blue"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/bebasneue_regular" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/bebasneue_regular"
+                    android:text="Sign in"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/btnForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/white"
+                    android:fontFamily="@font/bebasneue_regular"
+                    android:text="Forgot password?"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_gradient_bg"
+    android:orientation="vertical">
+
+    <!-- Cover photo with soft pink overlay -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/coverPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/soft_pink_gradient" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#40FFC0F0" />
+    </FrameLayout>
+
+    <!-- Avatar with cute shadow -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_person_cute"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFF"
+            android:elevation="8dp"
+            android:background="@drawable/circle_pink_shadow" />
+
+        <!-- Cute decoration -->
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_flower_decoration"
+            android:layout_alignBottom="@id/avatarImageView"
+            android:layout_alignRight="@id/avatarImageView"
+            android:layout_marginRight="-10dp"
+            android:layout_marginBottom="-10dp" />
+    </RelativeLayout>
+
+    <!-- Name section with elegant typography -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/philosopher_italic"
+            android:text="Dave C. Brown"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@drawable/ic_verified"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/philosopher_italic"
+            android:text="Lily_Colin"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+        <!-- Thêm TextView cho bio ở đây -->
+        <TextView
+            android:id="@+id/bioTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/philosopher_italic"
+            android:gravity="center"
+            android:maxLines="3"
+            android:paddingHorizontal="32dp"
+            android:text="This is my bio description..."
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+        <!-- Edit profile button with cute style -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editProfileButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_edit_pencil"
+            android:drawablePadding="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingHorizontal="24dp"
+            android:text="Edit Profile"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#000000"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+    <!-- Stats with elegant cards -->
+
+    <!-- Tabs with indicator -->
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/postTabTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_post_outline"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/agbalumo"
+            android:gravity="center"
+            android:text="Post"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="#E0E0E0" />
+
+        <TextView
+            android:id="@+id/detailsTabTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_details_filled"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/agbalumo"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- About me & Work Experience with cute scroll -->
+    <!-- Thay thế RecyclerView bằng đoạn này -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/nestedScrollView"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <!-- Đặt toàn bộ nội dung của em vào đây -->
+        <include layout="@layout/item_profile_detail"/>
+
+        <!-- Thêm khoảng trống phía dưới -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="72dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <!-- Post Section -->
+    <LinearLayout
+        android:id="@+id/postSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bài viết của bạn"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="72dp"/>
+
+        <ProgressBar
+            android:id="@+id/postProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+
+
+    <!-- Cute bottom navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_nav_bg"
+        app:itemIconTint="@drawable/bottom_nav_colors"
+        app:itemTextColor="@drawable/bottom_nav_colors"
+        app:itemIconSize="24dp"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+</LinearLayout>

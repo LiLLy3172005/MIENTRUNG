@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Style cho dialog -->
+    <style name="MyDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <!-- Background trong suốt -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- Không có title mặc định -->
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- Bo góc dialog -->
+        <item name="android:windowIsFloating">true</item>
+
+        <!-- Hiệu ứng animation -->
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+
+        <!-- Màu chữ và icon chính -->
+        <item name="colorPrimary">@color/pink_primary</item>
+
+        <!-- Màu nền dialog -->
+        <item name="android:colorBackground">@android:color/white</item>
+
+        <!-- Bo góc 16dp -->
+        <item name="dialogCornerRadius">16dp</item>
+    </style>
+
+    <!-- Hiệu ứng animation cho dialog -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Travel_MienTrung" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Travel_MienTrung" parent="Base.Theme.Travel_MienTrung" />
+</resources>

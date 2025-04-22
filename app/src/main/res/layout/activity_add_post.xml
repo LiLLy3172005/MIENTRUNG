@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Tiêu đề lớn -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📝 Tạo Bài Viết Mới"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/philosopher_bold"
+
+            android:layout_marginBottom="16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Nhãn tiêu đề -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiêu đề bài viết"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/philosopher_bold"
+
+                    android:layout_marginBottom="6dp" />
+
+                <EditText
+                    android:id="@+id/titleEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập tiêu đề..."
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:fontFamily="@font/philosopher_bold"
+
+                    android:textSize="16sp"
+                    android:inputType="text" />
+
+                <!-- Nhãn nội dung -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nội dung"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/philosopher_bold"
+
+                    android:textColor="#333333"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="6dp" />
+
+                <EditText
+                    android:id="@+id/contentEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:hint="Nhập nội dung bài viết..."
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/philosopher_bold"
+
+                    android:gravity="top"
+                    android:inputType="textMultiLine" />
+
+                <!-- Nhãn hình ảnh -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hình ảnh minh họa"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/philosopher_bold"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="6dp" />
+
+                <!-- Hình ảnh -->
+                <ImageView
+                    android:id="@+id/selectedImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/hihi"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home2" />
+
+                <!-- Nút chọn ảnh -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/selectImageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📷 Chọn ảnh"
+                    android:layout_marginTop="12dp"
+                    app:cornerRadius="12dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+                <!-- Nút đăng bài -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/postButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🚀 Đăng bài"
+                    android:layout_marginTop="16dp"
+                    app:cornerRadius="12dp"
+                    style="@style/Widget.MaterialComponents.Button" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

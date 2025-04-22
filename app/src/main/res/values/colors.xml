@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Màu cơ bản -->
+    <color name="black">#FF000000</color>
+    <color name="gray">#CABBBB</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Màu chủ đạo (Material Design) -->
+    <color name="colorPrimary">#6200EE</color>  <!-- Màu chính (đã thống nhất dùng primary_color) -->
+    <color name="colorPrimaryDark">#3700B3</color>  <!-- Màu chính đậm -->
+    <color name="colorAccent">#03DAC5</color>  <!-- Màu nhấn -->
+    <color name="primary_color">#6200EE</color>
+    <!-- Màu phụ trợ -->
+    <color name="dark_blue">#000d33</color>
+    <color name="blue_500">#4285F4</color>
+
+    <!-- Màu văn bản -->
+    <color name="dark_text">#212121</color>  <!-- Thay thế grey_800 -->
+    <color name="regular_text">#424242</color>
+    <color name="secondary_text">#757575</color>  <!-- Thay thế grey_600 -->
+
+    <!-- Màu nền -->
+    <color name="light_gray_background">#F5F5F5</color>
+    <color name="image_placeholder">#EEEEEE</color>
+    pink_primary
+    <color name="pink_primary">#BA4088</color>
+
+    <!-- Bottom navigation colors -->
+    <color name="bottom_nav_colors">@color/selector_bottom_nav_colors</color>
+</resources>

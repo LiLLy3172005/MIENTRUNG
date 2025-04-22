@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/rounded_white_card">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/chango"
+        android:gravity="center"
+        android:text="Edit Profile"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Avatar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialogAvatarImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person_cute"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF6B8B"/>
+
+        <TextView
+            android:id="@+id/changePhotoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/agbalumo"
+            android:text="Change photo"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Name field -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxStrokeColor="#FF6B8B"
+        app:hintTextColor="#FF6B8B">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialogNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/agbalumo"
+            android:hint="Name"
+            android:textColor="#333333" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Bio field -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxStrokeColor="#FF6B8B"
+        app:hintTextColor="#FF6B8B">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialogBioEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/agbalumo"
+            android:hint="Bio"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColor="#333333" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/dialogCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:fontFamily="@font/agbalumo"
+            android:text="Cancel"
+            android:textColor="#FF6B8B" />
+
+        <Button
+            android:id="@+id/dialogSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:fontFamily="@font/agbalumo"
+            android:text="Save"
+            android:textColor="#FF6B8B" />
+    </LinearLayout>
+</LinearLayout>
