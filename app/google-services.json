@@ -1,33 +1,55 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "83366206238",
     "project_id": "travelappmientrung",
     "storage_bucket": "travelappmientrung.firebasestorage.app"
+=======
+    "project_number": "488867858022",
+    "project_id": "travelappmientrung-80c57",
+    "storage_bucket": "travelappmientrung-80c57.firebasestorage.app"
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:83366206238:android:29b43b3a7c72fd1d36870f",
+=======
+        "mobilesdk_app_id": "1:488867858022:android:7f68c4023aca8db9ef0fa7",
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
         "android_client_info": {
           "package_name": "com.example.travel_mientrung"
         }
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
           "client_id": "83366206238-5i7q825dsc2heml0couvalm2m8o5b8dd.apps.googleusercontent.com",
+=======
+          "client_id": "488867858022-e3h92c15mviu194gpm37v6mhq9hip42a.apps.googleusercontent.com",
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
           "client_type": 3
         }
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyAYbhpHSpHdBHe0pljRO9s4JxWlUieJbj4"
+=======
+          "current_key": "AIzaSyCXC3dh_Py71BP8rpOmLGYlZl5Lx8AiWUI"
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
+<<<<<<< HEAD
               "client_id": "83366206238-5i7q825dsc2heml0couvalm2m8o5b8dd.apps.googleusercontent.com",
+=======
+              "client_id": "488867858022-e3h92c15mviu194gpm37v6mhq9hip42a.apps.googleusercontent.com",
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
               "client_type": 3
             }
           ]

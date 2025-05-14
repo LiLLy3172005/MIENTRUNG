@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+<<<<<<< HEAD
 
     <!-- Style cho dialog -->
     <style name="MyDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
@@ -29,6 +30,8 @@
         <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
+=======
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
     <!-- Base application theme. -->
     <style name="Base.Theme.Travel_MienTrung" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->

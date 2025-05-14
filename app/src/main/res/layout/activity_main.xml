@@ -7,18 +7,30 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+<<<<<<< HEAD
         android:background="@color/dark_blue" />
 
 <!--    android:src="@drawable/mainn"-->
+=======
+        android:scaleType="centerCrop"
+        android:src="@drawable/mainn" />
+
+
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
     <!-- Icon phía trên TextView -->
     <!-- Lớp phủ nội dung phía trên ảnh nền -->
     <LinearLayout
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="728dp"
+=======
+        android:layout_height="match_parent"
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
         android:gravity="center"
         android:orientation="vertical"
         android:padding="32dp">
 
+<<<<<<< HEAD
         <!--        <ImageView-->
         <!--            android:layout_width="68dp"-->
         <!--            android:layout_height="64dp"-->
@@ -37,12 +49,36 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
+=======
+<!--        <ImageView-->
+<!--            android:layout_width="68dp"-->
+<!--            android:layout_height="64dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:src="@drawable/ic_launcher_dua_foreground"-->
+
+<!--            android:textAlignment="center" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="494dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/lobster_regular"
+            android:text="Welcome to the heart of Central Vietnam"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp" />
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
 
         <!-- Button "Tiếp tục" thay cho ImageView -->
         <ImageView
             android:id="@+id/ivNext"
             android:layout_width="wrap_content"
+<<<<<<< HEAD
             android:layout_height="118dp"
+=======
+            android:layout_height="wrap_content"
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
             android:clickable="true"
             android:contentDescription="Tiếp tục"
             android:focusable="true"

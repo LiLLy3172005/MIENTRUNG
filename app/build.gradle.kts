@@ -3,8 +3,12 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
     alias(libs.plugins.google.firebase.crashlytics)
+<<<<<<< HEAD
     kotlin("kapt")
     id ("kotlin-parcelize")
+=======
+
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
 }
 
 android {
@@ -20,9 +24,12 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+<<<<<<< HEAD
     buildFeatures {
         viewBinding = true
     }
+=======
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
 
     buildTypes {
         release {
@@ -50,9 +57,12 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.crashlytics)
+<<<<<<< HEAD
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.storage.ktx)
+=======
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -61,6 +71,7 @@ dependencies {
     implementation ("com.google.firebase:firebase-auth-ktx:22.1.2")
     implementation ("com.google.android.gms:play-services-auth:20.7.0")  // Cho Google Sign-In (nếu cần)
 
+<<<<<<< HEAD
     implementation ("com.google.firebase:firebase-firestore-ktx:24.10.0") // hoặc phiên bản mới nhất
 
     implementation ("androidx.cardview:cardview:1.0.0")
@@ -87,4 +98,9 @@ dependencies {
     // Glide compiler (needed for @GlideModule)
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
 
+=======
+
+    // Facebook Login (nếu cần)
+    implementation("com.facebook.android:facebook-login:latest.release")
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
 }

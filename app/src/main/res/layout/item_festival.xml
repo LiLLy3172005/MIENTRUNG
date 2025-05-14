@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- ImageView for Festival Image -->
+        <ImageView
+            android:id="@+id/imageViewFestival"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+        android:clipToOutline="true" />
+
+        <!-- TextView for Festival Name -->
+        <TextView
+            android:id="@+id/textViewFestivalName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:fontFamily="@font/lobster_regular"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- TextView for Festival Description -->
+        <TextView
+            android:id="@+id/textViewFestivalDescription"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/philosopher_italic"
+            android:maxLines="4"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

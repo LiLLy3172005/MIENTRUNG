@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- Màu cơ bản -->
     <color name="black">#FF000000</color>
     <color name="gray">#CABBBB</color>
@@ -28,4 +29,9 @@
 
     <!-- Bottom navigation colors -->
     <color name="bottom_nav_colors">@color/selector_bottom_nav_colors</color>
+=======
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_blue"> #000d33</color>
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
 </resources>

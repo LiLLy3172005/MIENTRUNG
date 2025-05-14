@@ -2,10 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+=======
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,6 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travel_MienTrung"
         tools:targetApi="31">
+<<<<<<< HEAD
         <activity
             android:name=".layoutdetail.AddPostActivity"
             android:exported="false" />
@@ -57,3 +61,22 @@
     </application>
 
 </manifest>
+=======
+
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".WelcomeActivity"/>
+        <activity android:name=".ForgotPasswordActivity" />
+
+    </application>
+
+</manifest>
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0

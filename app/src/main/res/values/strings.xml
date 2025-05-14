@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Travel_MienTrung</string>
+<<<<<<< HEAD
     <string name="comment_options">Tùy chọn bình luận</string>
     <string name="food_image">Ảnh món ăn</string>
 
+=======
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
 </resources>

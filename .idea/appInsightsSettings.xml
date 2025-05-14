@@ -10,9 +10,15 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.travel_mientrung" />
+<<<<<<< HEAD
                   <option name="mobileSdkAppId" value="1:83366206238:android:29b43b3a7c72fd1d36870f" />
                   <option name="projectId" value="travelappmientrung" />
                   <option name="projectNumber" value="83366206238" />
+=======
+                  <option name="mobileSdkAppId" value="1:488867858022:android:7f68c4023aca8db9ef0fa7" />
+                  <option name="projectId" value="travelappmientrung-80c57" />
+                  <option name="projectNumber" value="488867858022" />
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

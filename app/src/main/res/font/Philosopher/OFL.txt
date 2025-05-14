@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Copyright © 2010 by Dharma Type.
+=======
+Copyright 2011 The Philosopher Project Authors (https://github.com/alexeiva/philosopher)
+>>>>>>> 9f9881795687e6734f8686098eb06e49784b55f0
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
